@@ -1,0 +1,448 @@
+Loops:
+
+   for , while, do while
+
+
+class LoopExample{
+    
+    public static void main(String args[]){
+        
+          int i=0;
+          
+          for(i=0;i<=10;i++){     // i=0 , 1 2
+              
+              System.out.println("Hi");
+          }                                        // hi hi hi 
+        
+       
+    }
+}
+========================================================
+class LoopExample{
+    
+    public static void main(String args[]){
+        
+          int i=0;
+          
+          for(i=1;i<=10;i++){     // i=0 , 1 2
+              
+              System.out.print(i+" ");
+          }                                        // hi hi hi 
+        
+       
+    }
+}
+==========================================================
+// WAP to print 1-n numbers using for loop
+import java.util.Scanner;
+class LoopExample{
+    
+    public static void main(String args[]){
+        
+        Scanner s=new Scanner(System.in);
+        
+        System.out.println("Enter n value");
+        int n=s.nextInt();  //50
+        
+          int i=0;
+          
+          for(i=1;i<=n;i++){     // i=0 , 1 2
+              
+              System.out.print(i+" ");
+          }                                        // hi hi hi 
+        
+       
+    }
+}
+=======================================================
+
+// WAP to print n-1 numbers using for loop
+import java.util.Scanner;
+class LoopExample{
+    
+    public static void main(String args[]){
+        
+        Scanner s=new Scanner(System.in);
+        
+        System.out.println("Enter n value");    //10 9 8 7....1
+        int n=s.nextInt();  
+        
+          int i=0;
+          
+          for(i=n;i>=1;i--){    
+              System.out.print(i+" ");
+          }                                         
+        
+       
+    }
+}
+==============================================
+WAP to accept start and stop values and print between values.
+
+  10
+  50
+     10 11 12 .....50
+
+
+  50
+  10
+     50 49 48......10
+
+
+
+
+import java.util.Scanner;
+class LoopExample{
+    
+    public static void main(String args[]){
+        
+        Scanner s=new Scanner(System.in);
+         int start=0,stop=0;
+         System.out.println("Enter start and stop values");
+         start=s.nextInt();
+         stop=s.nextInt(); 
+         
+         if(start<stop){
+             
+             for(int i=start;i<=stop;i++){
+                 System.out.print(i+" ");
+             }
+         }
+         else if(start>stop){
+             for(int i=start;i>=stop;i--){
+                 System.out.print(i+" ");
+             }
+         }
+         else{
+             System.out.println("Your start and stop values are same");
+         }
+
+    }
+}
+============================================================
+
+WAP to print even numbers between 1-n.
+
+
+import java.util.Scanner;
+class LoopExample{
+    
+    public static void main(String args[]){
+        
+        Scanner s=new Scanner(System.in);
+         System.out.println("Enter n value");
+         int n=s.nextInt();   // 50
+         
+         for(int i=1;i<=n;i++) {    //1 2 3 4 5 6 .....50  
+             
+             if(i%2==0){
+                 System.out.print(i+" ");
+             }
+         }
+    }
+}
+
+
+WAP to print odd numbers between 1-n.
+
+
+
+import java.util.Scanner;
+class LoopExample{
+    
+    public static void main(String args[]){
+        
+        Scanner s=new Scanner(System.in);
+         System.out.println("Enter n value");
+         int n=s.nextInt();   // 50
+         
+         for(int i=1;i<=n;i++) {    //1 2 3 4 5 6 .....50  
+             
+             if(i%2!=0){
+                 System.out.print(i+" ");
+             }
+         }
+    }
+}
+======================================================
+
+
+10   --> 1 2 5
+
+34   --> 1 2 17
+
+WAP to print factors of a given number.
+
+
+import java.util.Scanner;
+class LoopExample{
+    
+    public static void main(String args[]){
+        
+        Scanner s=new Scanner(System.in);
+         System.out.println("Enter n value");
+         int n=s.nextInt();
+         
+         for(int i=1;i<=n/2;i++){      //100
+             
+             if(n%i==0){
+                 System.out.print(i+" ");
+             }
+         }
+    }
+}
+==================================================
+
+WAP to print number of factors for the given number.
+
+
+   10  ->   1 2 5
+           number of factors is: 3
+
+
+import java.util.Scanner;
+class LoopExample{
+    
+    public static void main(String args[]){
+        
+        Scanner s=new Scanner(System.in);
+         System.out.println("Enter n value");
+         int n=s.nextInt();
+         int count=0;
+         for(int i=1;i<=n/2;i++){      //100   1 2 3 4....50
+             
+             if(n%i==0){           // 1 2 4 5 10 20 25 50
+                 count++;
+             }
+         }
+         System.out.println("Number of factors: "+count);
+    }
+}
+===========================================================
+WAP to check given number is prime number or not.
+
+ 
+
+import java.util.Scanner;
+class LoopExample{
+    
+    public static void main(String args[]){
+        
+        Scanner s=new Scanner(System.in);
+         System.out.println("Enter n value");
+         int n=s.nextInt();
+         int count=0;
+         for(int i=1;i<=n/2;i++){      //1000
+             
+             if(n%i==0){
+                 count++;
+             }
+         }
+         if(count==1){
+             System.out.println("Prime number");
+         }
+         else{
+             System.out.println("Not a prime number");
+         }
+    }
+}
+===================================================================
+
+WAP to check given number is perfect numebr or not.
+
+
+6  -->   1+2+3 ==>  6
+28 -->   1+2+4+7+14  ==> 28
+15  -->  1+3+5  ==> 9
+
+
+import java.util.Scanner;
+class LoopExample{
+    
+    public static void main(String args[]){
+        
+        Scanner s=new Scanner(System.in);
+         System.out.println("Enter n value");
+         int n=s.nextInt();
+          int sum=0;
+          
+          for(int i=1;i<=n/2;i++){   // 6   1 2 3 
+              if(n%i==0){
+                 sum=sum+i;    //1+2 = 3+3=6
+              }
+          }
+          if(sum==n){
+              System.out.println("Perfect number");
+          }
+          else{
+              System.out.println("Not a perfect number");
+          }
+    }
+}
+===============================================================
+
+WAP to print table of a given number.
+
+   2
+
+    2*1=2
+    2*2=4
+  
+
+    2*10=20 
+
+1. WAP to print 1-n numbers
+2. WAP to print n-1 numbers
+3. WAP to accept start and stop values and print between numbers.
+4. WAP to print even numbers between 1-n
+5. WAP to print odd number between 1-n
+6. WAP to print factors of a given number
+7. WAP to print number of factors of a given number
+8. WAP to check given number is prime number or not
+9. WAP to check given number is perfect number or not
+10. WAP to print table of a given number
+11. WAP to print factorial of a given number.
+
+            5  :  5*4*3*2*1==>
+
+----------------------------------------------------------------------
+ 
+Typecasting: The process of converting one data type to another data type.
+
+
+1.  Implicit typecasting
+
+     it is a process of converting low level data type to high level data type.
+      
+        byte---> short --->int---> long
+         int ---> float
+         char  --> int
+
+          byte a=89;
+          int b=a;    // implicit typecasting
+
+class LoopExample{
+    
+    public static void main(String args[]){
+        
+               int a=90;
+               long b=a;
+               System.out.println(b);
+               
+               int c=67;
+               float d=c;
+               System.out.println(d);
+               
+               char ch='A';
+               int e=ch;
+               System.out.println(e);
+    }
+}
+
+
+    A -65 B- 66 
+    a -97
+
+2.  Explicit typecasting
+
+        it is a process of converting high level data type to low data type.
+
+
+         long --> int --> short -->byte
+           float--> int
+            int --->char
+
+
+class LoopExample{
+    
+    public static void main(String args[]){
+        
+              long a=89;
+              int b=(int)a;
+              System.out.println(b);
+              
+              float n=90.45f;
+              int m=(int)n;
+              System.out.println(m);
+              
+              int ch=66;
+              char c=(char)ch;
+              System.out.println(c);
+    }
+}
+============================================================================
+
+Naming rules to declare varaibles:
+
+1.   int a=90;
+2.   int 3=90;
+3.   int @a=90;
+4.   int _a=90;
+5.   int $a=90;
+6.   int ab c=90;
+7.   int ab_c=90;
+
+   1, 4 and 5 are correct.
+
+1. varaible name should start with alphabet(small letters).
+2. varaible name can start with _ or $ and does not start with numbers.  
+3. varaible name does not allows special character except _ and $
+4. varaible name does not allows spaces.
+
+
+Naming rules to declare class name:
+
+1. Student
+2. student
+3. student details
+4. StudentDetails
+5. @abc
+
+
+
+1 and 4 are correct.
+
+1. class name should start with alphabet (uppercase letter)
+2. class name does not allows spaces and special character
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

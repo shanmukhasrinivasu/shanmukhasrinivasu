@@ -1,0 +1,227 @@
+
+
+pin--> wrong   --> InvalidUserException
+
+age --> <18    --> InvalidAgeException
+
+
+if()
+throw new ArithmeticException("msg");
+class InvalidAgeException extends Exception{
+     InvalidAgeException(String str){
+         super(str);
+     }    
+}
+
+
+class Example10{
+ 
+    public void vote() throws InvalidAgeException{
+        int age=32;
+        if(age<18){
+            throw new InvalidAgeException("Not eligible for vote");
+        }
+        else{
+            System.out.println("Eligible for vote");
+        }
+    }
+    public static void main(String args[]){
+              
+   Example10 obj=new Example10();
+            try{
+                obj.vote();
+                
+            }
+            catch(InvalidAgeException e){
+                System.out.println(e);
+            
+            }
+    }    
+}===================================================================
+
+WAP to create custom exception called "InvalidUserException". and throw this exception if pin number is incorrect.
+
+
+pin==1234
+
+
+
+try{
+
+   // Exception
+}
+catch(ArithmeticException e){
+}
+catch(NullPointerException e1){
+}
+catch(Exception e2){
+}
+
+=========================================================================================
+
+Multitasking:  Executing more than one task at the same time is called multitasking. 
+
+1. downloading     1hr
+2. copy=>paste     1hr
+3. music
+4. browse
+
+
+1. Process based multi tasking (OS level)
+2. Thread based multi tasking  (Program level) --> multithreading
+
+
+
+
+Thread:  Thread is light wight program
+
+
+MUltithreading: Executing more than one thread at the same time is called multithreading.
+
+
+
+1. The class should exetnds from Thread class
+2. The class should implements from Runnable interface.
+
+
+
+class Thread{
+
+   public void start(){
+   }
+   public void run(){
+
+   }
+
+}
+
+class Example11 extends Thread {
+    
+    public void run(){
+        for(int i=0;i<=25;i++){
+            System.out.println("User thread");
+        }
+    }
+    public static void main(String args[]){
+        
+        Example11 obj=new Example11();
+                  obj.start();
+        
+        for(int i=0;i<=15;i++){
+            System.out.println("Main thread");
+        }
+        
+        
+    }
+}
+
+=====================================================================================
+
+     String: String is a class in java. String is immutable, which means we can't change string values.
+
+
+        String str1="hi";                // string literals   ---> SCP
+        Strign str1=new String("hi");   //  String objects    ---> heap
+
+
+class Example12{
+    
+    public static void main(String args[]){
+        
+    String str1="Hi";
+    
+    str1.concat("hello");
+    
+    System.out.println(str1);
+    }
+}
+===========================================================================
+
+
+class Example12{
+    
+    public static void main(String args[]){
+        
+      String str1="hi";
+      String str2="hello";
+      String str3="hi";
+      
+      System.out.println(str1==str2);  // false 
+      System.out.println(str1==str3);  //  true
+      System.out.println(str2==str3);  //  false
+      
+      System.out.println(str1.equals(str2));  // false 
+      System.out.println(str1.equals(str3));  //  true
+      System.out.println(str2.equals(str3));  //  false
+        
+        
+    }
+    
+    
+}
+===================================================================
+
+
+class Example12{
+    
+    public static void main(String args[]){
+        
+      String str1=new String("hi");
+      String str2=new String("hello");
+      String str3=new String("hi");
+      
+      System.out.println(str1==str2);  // false 
+      System.out.println(str1==str3);  // false
+      System.out.println(str2==str3);  //  false
+      
+      System.out.println(str1.equals(str2));  // false 
+      System.out.println(str1.equals(str3));  //  true
+      System.out.println(str2.equals(str3));  //  false
+        
+        
+    }
+    
+    
+}
+====================================================================
+
+        
+    String str="Hello bitLabs";
+    
+    System.out.println(str.length());
+    System.out.println(str.toUpperCase());
+    System.out.println(str.toLowerCase());
+    System.out.println(str.substring(3));
+    System.out.println(str.substring(3,7));
+
+
+String str="Hello bitLabs";
+    
+     for(int i=0;i<str.length();i++){
+         System.out.println(str.charAt(i));
+     }
+    
+=======================================================================
+
+StringBuffer
+
+StringBuilder
+
+ StringBuffer b=new StringBuffer("hi");
+        b.append("hello");
+        
+        System.out.println(b);
+
+
+
+  StringBuilder b=new StringBuilder("hi");
+        b.append("hello");
+        
+        System.out.println(b);
+
+
+
+
+
+
+
