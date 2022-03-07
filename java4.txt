@@ -1,0 +1,57 @@
+
+
+
+
+
+class Example{
+     
+     public static void main(String args[])
+     {
+         String str1="hi";
+         
+         str1.concat("hello");
+         
+         System.out.println(str1);
+         
+     }
+}
+
+===========================================================================================================================================================================================
+
+
+
+
+class Example{
+     
+     public static void main(String args[])
+     {
+         String str1="hi";
+         String str2="hello";
+         String str3="hi";
+        
+         System.out.println(str1==str2);
+         
+         System.out.println(str1==str3);
+         
+         System.out.println(str2==str3);
+         
+         
+         
+         
+     }
+}
+
+=============================================================================================================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+

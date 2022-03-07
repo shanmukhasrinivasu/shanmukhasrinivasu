@@ -1,0 +1,241 @@
+Exception; its a logical error. the problem with exception is abnormal termination.
+
+=============================================================================================================================================================================================
+
+class Example1{
+    
+    public static void main(String args[])
+    {
+         System.out.println("hi");
+         System.out.println("hi");
+         System.out.println("10/0");
+         System.out.println("hello");
+         System.out.println("hello");
+    } 
+}
+
+===========================================================================================================================================
+
+class Example2{
+    
+    public static void main(String args[])
+    {
+         System.out.println("hi");
+         System.out.println("hi");
+         try{
+         System.out.println("10/0");
+         }
+         catch(Exception e){
+               System.out.println("we can't divide with zero");
+         }
+         System.out.println("hello");
+         System.out.println("hello");
+    } 
+}
+===========================================================================================================================================
+
+class Example3{
+    
+    public static void main(String args[])
+    {
+        
+        String str=null;
+        
+        System.out.println(str.length());
+        
+    }
+}
+        
+===========================================================================================================================================
+
+class Example3{
+    
+    public static void main(String args[])
+    {
+        string str="abc123";
+        
+        int a=Integer.parseInt(str);
+    }
+}
+===========================================================================================================================================
+
+class Example{
+    
+    public static void main(String args[])
+{
+    int arr[]={34,44,89,22,11};
+    
+    System.out.println(arr[5]);
+}
+}
+===========================================================================================================================================
+
+class Example{
+    
+    public static void main(String args[])
+{
+    int arr[]={34,44,89,22,11};
+    
+    System.out.println(arr[5]);
+}
+}
+=========================================================================================================================================
+
+ class Example{
+    
+    public static void main(String args[])
+{
+    
+    try{
+        String str=null;
+        
+        int l=str.length();
+    }
+    catch(ArithmeticException e){
+        System.out.println("AE");
+    }
+     catch(NumberFormatException e1){
+        System.out.println("NFE");
+    }
+    catch(Exception e){
+        
+        System.out.println("Exception");
+    }
+    
+}
+}
+===========================================================================================================================================
+
+class Example{
+    
+    public static void main(String args[])
+{
+    
+    try{
+         System.out.println("outer try");
+        
+        try{
+             System.out.println(10/0);
+        }
+        catch(Exception e){
+            
+             System.out.println("inner catch");
+        }
+    }
+    catch(ArithmeticException e){
+         System.out.println("outer catch");
+    }
+     System.out.println("Bye");
+    
+}
+}
+===========================================================================================================================================
+
+class Example{
+    
+    public static void main(String args[])
+{
+    
+    try{
+         System.out.println(10/0);
+        
+        try{
+             System.out.println(10/2);
+        }
+        catch(Exception e){
+            
+             System.out.println("inner catch");
+        }
+    }
+    catch(ArithmeticException e){
+         System.out.println("outer catch");
+    }
+     System.out.println("Bye");
+    
+}
+}
+===========================================================================================================================================
+
+class Example{
+    
+    public static void main(String args[])
+{
+    
+    try{
+         System.out.println(10/2);
+        
+        try{
+             System.out.println(10/0);
+        }
+        catch(Exception e){
+            
+             System.out.println(10/0);
+        }
+    }
+    catch(ArithmeticException e){
+         System.out.println("outer catch");
+    }
+     System.out.println("Bye");
+    
+}
+}
+===========================================================================================================================================
+
+class Example{
+    
+    public static void main(String args[])
+{
+    
+    try{
+         System.out.println(10/2);
+    
+        }
+        catch(Exception e){
+            
+             System.out.println("Catch block");     
+    }
+    finally{
+        
+         System.out.println("Finally");
+    }
+     System.out.println("Bye");
+    
+}
+}
+===========================================================================================================================================
+
+class Example{
+    
+    public static void main(String args[])
+{
+    
+          int age=12;
+          
+         if(age<18){
+             
+          Arithmetic Exception ("Not Eligible for vote");
+         }
+         else
+         System.out.println("Eligible for vote");
+}
+}
+===========================================================================================================================================
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+

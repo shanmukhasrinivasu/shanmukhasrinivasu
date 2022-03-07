@@ -1,0 +1,463 @@
+1.wap a java program to find maximum between three numbers
+
+import java.util.Scanner;
+
+public class Maximumthree
+public static void main(string[]args)
+{
+    Scanner sc=new Scanner(System.in);
+  System.out.println("enter num 1");
+  int num1=sc.nextint();
+    System.out.println("enter num 2");
+ int num2=sc.nextint();
+ System.out.println("enter num 3");
+  int num3=sc.nextint();
+if(num1>num2 && num1>num3)
+{
+     System.out.println("the maximum number is num1: "+num1);
+     {
+         else if(num2>num1 && num2>num3)
+ {
+      System.out.println("the maximum number is num2: "+num2);
+ }
+ else
+{
+ System.out.println("the maximum number is num3: "+num3);
+ }
+        }             
+
+============================================================================================================================================================================================w
+2.wap in a java in postive,negative,zero
+import java.util.Scanner;
+  public class positivenegative { 
+       public static void main(String[]args)
+{
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter num1");
+    int num1=sc.nextint();
+     
+     if(num1>0)
+     {
+          System.out.println("the number is postive : "+num1);
+     }
+     else if(num<0)
+     {
+          System.out.println("the number is negativew : "+num1);
+     }
+     else
+     {
+          System.out.println("the number is zero : "+num1);
+     }
+}
+
+=============================================================================================================================================================================================
+
+3
+
+
+import java.util.Scanner;
+public static void main(string[]args)
+{
+    Scanner sc=new Scanner(Systen.in);
+    System.out,println("enter num1");
+    int num1=sc.nextint();
+    if(num1%5==0 && num1%11==0)
+    {
+        System.out.println("number is divisible by 5 and 11");
+    }
+    else
+    {
+           System.out.println("number is not divisible by 5 and 11");
+    }
+    }
+
+
+
+================================================================================================================================================================================================
+
+
+import java.util.Scanner;
+public class Evenodd {
+    public static void main(String[])
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter num1");
+        int num1=sc.nextint();
+        if(num%2==0)
+        {
+            System.out.println("number is even: "+num1);
+        }
+        else
+        {
+              System.out.println("number is odd: "+num1);
+        }
+    }
+
+
+=============================================================================================================================================================================================
+
+
+import java.util.Scanner;
+public class Alphabet {
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter num1");
+        char c=sc.nex().charAt(0);
+        if((c>='a' && c<='z') ||(c>='A' && c<='Z'))
+        {
+            System.out.println("c+" is alphabet");
+        }
+        else
+        {
+              System.out.println(c+" is not alphabet");
+        }
+    }
+}
+
+
+=============================================================================================================================================================================================
+
+
+
+
+import java.util.Scanner;
+public class vowel{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter num1");
+        char c=sc.nex().charAt(0);
+        if((c=='a') || c=='e') ||(c=='i') || c=='o') ||(c=='u')
+        {
+            System.out.println("its a vowel");
+        }
+        else
+        {
+              System.out.println("its a consonant");
+        }
+    }
+}
+=============================================================================================================================================================================================
+9. wap java in input any character and check whether its alphabet,digit or special character.
+
+import java.util.Scanner;
+public class Alphadigitchar{
+    public static void main(string[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter num1");
+        char c=sc.next().charAt(0);
+        if((c>='a' && c<='z') ||(c>='A' && c<='Z'))
+        {
+         System.out.println("its a alphabet");
+        }
+        else if((c=='@')||(c=='#')||(c=='$')||(c=='(')||(c=='('))
+        {
+             System.out.println("its a specialcharacter");
+        }
+        else if((c>0) || (c<9))
+        {
+         System.out.println("its a digit");
+        }
+    }
+}
+
+=============================================================================================================================================================================================
+
+
+
+import java.util.Scanner;
+public class upperlowercase{
+    public static void main(string[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter num1");
+        char c=sc.next().charAt(0);
+        if((c>='a' && c<='z') 
+        {
+         System.out.println("alphabet is lowercase");
+        }
+        else if((c>='A' && c<='Z')
+        {
+             System.out.println("alphabet is uppercase");
+        }
+        else 
+        {
+         System.out.println("invalid");
+        }
+    }
+}
+
+
+=============================================================================================================================================================================================
+
+
+
+
+import java.util.Scanner;
+public class weekday{
+    public static void main(String[]argsa)
+}
+Scanner snew Scanner(System.in);
+System.out,println("enter day");
+int day=sc.nextint();
+switch(day)
+{
+    case 1:id(day==1)
+    {
+        System.out,println("monday");
+             breaK;
+    }
+        case 2:id(day==2)
+        {
+                      System.out,println("tuesday");
+        }
+          case 3:id(day==3)
+          {
+                  System.out,println("wednesday");
+                  break;
+          }
+            case 4:id(day==4)
+            {
+                    System.out,println("thursday");
+                     break;
+            }
+              case 5:id(day==5)
+              {
+                      System.out,println("friday");
+                       break;
+              }
+                case 6:id(day==6)
+                {
+                        System.out,println("saturday");
+                         break;
+                }
+                  case 7:id(day==7)
+                  {
+                          System.out,println("sunday");
+                           break;
+                  }
+                         defacult
+                          System.out,println("sunday");
+                   
+    }
+}
+
+
+
+=============================================================================================================================================================================================
+
+
+
+
+import java.util.Scanner;
+public class Amount {
+    public static void main(String[]argsa)
+{
+    int count=0
+    Scanner snew Scanner(System.in);
+    System.out,println("enter num");
+    int day=sc.nextint();
+     if(n%100==0)
+     {
+         if(n>=500)
+         {
+         count=n/500
+         n=n-(count*500);
+          System.out,println("500 counts are :"+count);
+         }
+         if(n>=200)
+         {
+         count=n/200
+         {
+         n=n-(count*200);
+          System.out,println("200 counts are :"+count);
+         }
+          if(n>=100)
+         {
+         count=n/100
+         n=n-(count*100);
+          System.out,println("100 counts are :"+count);
+         }
+     }
+     else
+     {
+         System.out.println("invaild");
+     }
+   
+                
+}
+
+=============================================================================================================================================================================================
+
+
+
+
+
+ import java.util.Scanner;
+ public class Percentage {
+ 
+ 
+  percentage >=90% : Grade A
+  percentage >=80% : Grade B
+  percentage >=70% : Grade C
+  percentage >=60% : Grade D
+  percentage >=50% : Grade E
+  percentage >=40% : Grade F
+  
+    public static void main(String[]argsa)
+{
+    int total=0;
+    Scanner snew Scanner(System.in);
+    System.out,println("enter physics marks");
+    int phy=sc.nextint();
+     System.out,println("enter chemistry marks");
+     int chem=sc.nextint();
+     System.out,println("enter biology marks");
+      int bio=sc.nextint()
+     System.out,println("enter maths marks");
+      int maths=sc.nextint()
+     System.out,println("enter computer marks");
+      int comp=sc.nextint()
+    
+    total=phy+chem+bio+maths+comp;
+     System.out,println("the total marks are: "+total);
+     
+     int percentage=(total*100)/500;
+      System.out,println("the total percentage is: "+percentage);
+      if(percentage<=100 && percentage>90)
+      {
+           System.out,println("A grade");
+      }
+       if(percentage<=90 && percentage>80)
+       {
+       System.out,println("B grade");
+       }
+        if(percentage<=80 && percentage>70)
+        {
+        System.out,println("C grade");
+        }
+         if(percentage<=70 && percentage>60)
+         {
+         System.out,println("D grade");
+         }
+           if(percentage<=60 && percentage>40)
+           {
+                 System.out,println("E grade");
+           }
+          if(percentage<40)
+          {
+          System.out,println("fail");
+     
+}
+
+
+=============================================================================================================================================================================================
+
+14. wap im java progaram to input basics salary of an empolyee and calculate its gross salary fallowing data;
+basic salary<=10000 : hra =20%, da=80%
+basic salary<=20000 : hra =25%, da=90%
+basic salary>20000 : hra =30%, da=95%
+
+ import java.util.Scanner;
+ public class Salary {
+ 
+ public static void main(String[]argsa)
+{
+    int hra;int da;int gs;
+    Scanner snew Scanner(System.in);
+    System.out,println("enter salary");
+     
+     int salary=sc.nextInt();
+     if(salary>20000)
+     {
+         hra=(salary*30)/100;
+         da=(salary*95)/100;
+         gs=salar+hra+da;
+         System.out,println("the basic salary :"+salary);
+          System.out,println("total gross salary :"+gs);
+     }
+        if(salary<=20000 && salary>10000)
+     {
+         hra=(salary*25)/100;
+         da=(salary*90)/100;
+         gs=salar+hra+da;
+         System.out,println("the basic salary :"+salary);
+          System.out,println("total gross salary :"+gs);
+     }
+     if(salary<=10000)
+     {
+         hra=(salary*20)/100;
+         da=(salary*80)/100;
+         gs=salar+hra+da;
+         System.out,println("the basic salary :"+salary);
+          System.out,println("total gross salary :"+gs);
+     }
+     
+  
+     
+}
+
+
+============================================================================================================================================================================================
+
+
+
+
+
+
+class Example{
+     
+     public static void main(String args[])
+     {
+         String str1="hi";
+         
+         str1.concat("hello");
+         
+         System.out.println(str1);
+         
+     }
+}
+
+
+
+===========================================================================================================================================================================================
+
+
+
+
+class Example{
+     
+     public static void main(String args[])
+     {
+         String str1="hi";
+         String str2="hello";
+         String str3="hi";
+        
+         System.out.println(str1==str2);
+         
+         System.out.println(str1==str3);
+         
+         System.out.println(str2==str3);
+         
+         
+         
+         
+     }
+}
+
+
+
+=============================================================================================================================================================================================
+
+
+
+
+
+
+
+
+
+
+
