@@ -1,0 +1,469 @@
+
+1. WAP to print 1-n numbers using while loop.
+2. WAP to print reverse of a given numeber
+3. WAP to print sum of all digits in a given number.
+        6732  =>  6+7+3+2 ==> 
+4. WAP to print sum of even digits and sum of odd digits in a given number.
+
+5. WAP to check given number is armstrong number or not.
+    
+          153  ==> 1+125+27  ==> 153
+
+6. WAP to check given number is Strong number or not.    
+
+        145  =>  1+24+120  ==> 145   // sum of factorial of each digit =num
+
+7. WAP to print prime numbers between 1-n
+-------------------------------------------------------------
+class Example7{
+    
+    public static void main(String args[]){
+        
+        int i=1;
+        do{
+            System.out.print(i+"  "); 
+            i++;
+        }
+        while(i<=10);
+        
+        
+    }
+}
+==========================================================
+Relational operators: 
+
+
+  < <= > >= == !=             =====> boolean value : true/false
+
+class Example7{
+    
+    public static void main(String args[]){
+        
+       if(true){                            
+           System.out.println("Hi");
+       }
+       else{
+           System.out.println("Bye");
+       }
+        
+        
+    }
+}
+==============================================
+class Example7{
+    
+    public static void main(String args[]){
+        
+       if(false){                            
+           System.out.println("Hi");
+       }
+       else{
+           System.out.println("Bye");
+       }
+        
+        
+    }
+}
+===========================================
+class Example7{
+    
+    public static void main(String args[]){
+        
+       while(true){
+           System.out.println("Hello");
+       }
+        
+        
+    }
+}
+==========================================
+class Example7{
+    
+    public static void main(String args[]){
+        
+        int i=1;
+       while(i<=10){
+           System.out.println("Hello");
+          
+       }
+        
+        
+    }
+}
+=============================================
+class Example7{
+    
+    public static void main(String args[]){
+        
+        int i=1;
+       while(i<=10){
+              
+           System.out.println("Hello");
+           
+           break;
+          
+       }
+        
+        
+    }
+}
+=====================================
+class Example7{
+    
+    public static void main(String args[]){
+        
+        int i=1;
+       while(i<=10){
+          
+          if(i==6){  
+           System.out.println("Hello");
+          }
+          else{
+              System.out.println("Bye");
+          }
+          i++;
+       }
+        
+        
+    }
+}
+==================================================
+
+class Example7{
+    
+    public static void main(String args[]){
+        
+        int i=1;
+       while(i<=10){
+          
+          if(i==6){  
+           System.out.println("Hello");
+           break;
+          }
+          else{
+              System.out.println("Bye");
+          }
+          i++;
+       }
+        
+        
+    }
+}
+===============================================
+class Example7{
+    
+    public static void main(String args[]){
+        int i=1;
+       while(i<=10){
+          if(i==2){  
+           System.out.println("Hello");
+          }
+          else{
+              System.out.println("Bye");
+          }
+           i++;
+          break;
+         
+       }
+    }
+}
+===================================================
+class Example7{
+    
+    public static void main(String args[]){
+        int i=1;
+       while(i<=10){
+          
+          if(i==5){
+              System.out.println(i);
+              continue;
+          }
+          System.out.println(i);
+          
+         
+       }
+    }
+}
+=====================================================
+
+class Example8{
+    
+    public static void main(String args[]){
+        int i=1;
+        
+        while(i<=10){
+             i++;
+            if(i==5){
+                continue;
+            }
+             System.out.print(i+" ");
+           
+        }
+    
+           
+    }
+}
+=======================================================
+class Example8{
+    
+    public static void main(String args[]){
+        int i=1;
+        
+        while(i<=10){
+             i++;
+            if(i==5 || i==7) {
+                continue;
+            }
+             System.out.print(i+" ");
+           
+        }
+    
+           
+    }
+}
+===================================================
+class Example8{
+    
+    public static void main(String args[]){
+        int i=1;
+        
+        while(i<=10){
+             i++;
+            if(i==5 && i==7) {
+                continue;
+            }
+             System.out.print(i+" ");
+           
+        }
+    
+           
+    }
+}
+==================================================================
+
+
+class Example8{
+    
+    public static void main(String args[]){
+      
+      int a=90;
+          a=67; 
+          a=66;
+      System.out.println(a);
+      a=77;
+      System.out.println(a);
+      
+           
+    }
+}
+=====================================================================
+
+Array: Array is collection of similar type of elements.
+
+int arr[]={23,45,67,78,90}
+
+int arr[]=new int[5];
+
+class Example8{
+    
+    public static void main(String args[]){
+      
+      int arr[]={23,45,67,78,90,65,33,22};
+      
+      System.out.println(arr[3]);
+      System.out.println(arr[0]);
+      
+      System.out.println(arr.length);   // to find number of elements in an array.
+      
+      System.out.println(arr[arr.length-1]);
+      
+           
+    }
+}
+
+===============================================================
+class Example8{
+    
+    public static void main(String args[]){
+      
+      int arr[]={23,45,67,78,90,65,33,22};
+      
+      for(int i=0;i<arr.length;i++){
+          
+          System.out.print(arr[i]+"  ");
+      }
+    }
+}
+========================================================
+ 
+ WAP to print sum of all the elements in the given array.
+ WAP to print sum of even elements and sum of odd elements in the given array.
+ WAP to check given element is present in the given array or not.
+
+            {23,89,45,25,90,55}
+           key=89
+                  yes
+
+           key=100 
+                  NO
+
+import java.util.Scanner;
+class Example8{
+    
+    public static void main(String args[]){
+      
+      int arr[]={23,45,67,78,90,65,33,22};
+      
+      Scanner s=new Scanner(System.in);
+      System.out.println("Enter search element");
+      int key=s.nextInt();   // 33   50
+         int count=0;
+        for(int i=0;i<arr.length;i++){
+            if(arr[i]==key){
+                count++;
+                break;
+            }
+        }
+        if(count>0){
+            System.out.println("Yes, the element is present in array");
+        }
+        else{
+            System.out.println("No, Element is not found");
+        }
+        
+      
+      
+           
+    }
+}
+===================================================================
+
+WAP to find number of occurences of each element in a given array.
+import java.util.Scanner;
+class Example8{
+    
+    public static void main(String args[]){
+        int count=1;
+      int arr[]={23,45,67,67,90,23,23,50};
+      
+      for(int i=0;i<arr.length;i++){
+          
+          for(int j=i+1;j<arr.length;j++){
+              
+              if(arr[i]==arr[j]){
+                  count++;
+                  arr[j]=0;
+              }
+          }
+          if(arr[i]!=0){
+          System.out.println(arr[i]+" : "+count);
+          }
+          count=1;
+      }
+    }
+}
+====================================================================
+WAP to print unique values in a given array
+
+import java.util.Scanner;
+class Example8{
+    
+    public static void main(String args[]){
+        int count=1;
+      int arr[]={23,45,67,67,90,23,23,50};
+      
+      for(int i=0;i<arr.length;i++){
+          
+          for(int j=i+1;j<arr.length;j++){
+              
+              if(arr[i]==arr[j]){
+                  count++;
+                  arr[j]=0;
+              }
+          }
+          if(arr[i]!=0 && count==1){
+          System.out.println(arr[i]+" : "+count);
+          }
+          count=1;
+      }
+      
+    
+    
+    }
+}
+
+
+WAP to print duplicate values in a given array.
+
+import java.util.Scanner;
+class Example8{
+    
+    public static void main(String args[]){
+        int count=1;
+      int arr[]={23,45,67,67,90,23,23,50};
+      
+      for(int i=0;i<arr.length;i++){
+          
+          for(int j=i+1;j<arr.length;j++){
+              
+              if(arr[i]==arr[j]){
+                  count++;
+                  arr[j]=0;
+              }
+          }
+          if(arr[i]!=0 && count>1){
+          System.out.println(arr[i]+" : "+count);
+          }
+          count=1;
+      }
+      
+    
+    
+    }
+}
+
+=================================================================================
+
+WAP print given array in Sorted order (ASC/Desc)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
